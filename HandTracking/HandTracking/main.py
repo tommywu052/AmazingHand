@@ -95,38 +95,18 @@ def process_img(hand_proc, image):
               unit_z=unit_z/np.linalg.norm(unit_z)
               pinky_mcp=np.array([hand_landmarks_norm.landmark[mp_hands.HandLandmark.PINKY_MCP].x,hand_landmarks_norm.landmark[mp_hands.HandLandmark.PINKY_MCP].y,hand_landmarks_norm.landmark[mp_hands.HandLandmark.PINKY_MCP].z])
 
-              vec=pinky_mcp-origin
-              unit_x=np.cross(unit_z,vec)
+              # print(f"ORIGIN: {origin} MID: {mid_mcp}")
+              vec_towards_y=pinky_mcp-origin
+              # unit_x=np.cross(unit_z,vec_towards_y)
+              unit_x=np.cross(vec_towards_y,unit_z)
 
 
               unit_x=unit_x/np.linalg.norm(unit_x)
               unit_y=np.cross(unit_z,unit_x)
-              # print(image.shape)
-              # K=np.array(
-              #     [[592.71947493,   0.,         306.65909195],
-              #      [  0.,         589.79553329, 219.71122543],
-              #      [  0.,           0.,           1.,        ]]
-              # )
-              # disto=np.array([ 0.02634809,  0.42377447, -0.001297,   -0.01422172, -1.06702181])
+              # unit_y=np.cross(unit_x,unit_z)
+
               # A=np.array([unit_x,unit_y,unit_z]).reshape((3,3))
-              A=np.array([unit_x,unit_y,unit_z]).reshape((3,3))
-              # R=np.linalg.inv(A)
-              R=A
-
-              a=Rotation.from_matrix(R)
-              eul=a.as_euler("xyz",degrees=True)
-              # print(f"euler: {eul}")
-              # R=np.eye(3)
-              # print(f"frame: {A}\nR: {R}\norigin: {origin}\norigin2: {origin*np.array([image.shape[0],image.shape[0],image.shape[0]])}")
-
-
-              # rotV, _ = cv2.Rodrigues(R)
-              # points = np.array([[100, 0, 0], [0, 100, 0], [0, 0, 100], [0, 0, 0]],dtype = np.float64).reshape(-1, 3)
-              # axisPoints, _ = cv2.projectPoints(points, rotV, origin*np.array([image.shape[0],image.shape[0],image.shape[0]]), K, disto)
-              # print(f"axispoints {axisPoints[3].ravel()}")
-              # image = cv2.line(image, tuple(axisPoints[3].ravel()), tuple(axisPoints[0].ravel()), (255,0,0), 3)
-              # image = cv2.line(image, tuple(axisPoints[3].ravel()), tuple(axisPoints[1].ravel()), (0,255,0), 3)
-              # image = cv2.line(image, tuple(axisPoints[3].ravel()), tuple(axisPoints[2].ravel()), (0,0,255), 3)
+              R=np.array([unit_x,-unit_y,unit_z]).reshape((3,3)) #-y because of mirror?
 
 
               # tip1=np.array([tip1_x,tip1_y,tip1_z]).dot(R)

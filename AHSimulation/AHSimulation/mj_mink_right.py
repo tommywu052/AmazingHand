@@ -237,39 +237,19 @@ class Client:
     def write_mocap(self, hand):
         # print(hand)
         #please, a method to access the mocap objects by name...
-        # [x,y,z]=hand[0]['r_tip1'].values
-        # self.data.mocap_pos[0]=[-z.as_py()*1.5-0.025,-x.as_py()*1.5+0.022,-y.as_py()*1.5+0.098]
-        # [x,y,z]=hand[0]['r_tip2'].values
-        # self.data.mocap_pos[1]=[-z.as_py()*1.5-0.025,-x.as_py()*1.5-0.009,-y.as_py()*1.5+0.092]
-        # [x,y,z]=hand[0]['r_tip3'].values
-        # self.data.mocap_pos[2]=[-z.as_py()*1.5-0.025,-x.as_py()*1.5-0.040,-y.as_py()*1.5+0.082]
-        # [x,y,z]=hand[0]['r_tip4'].values
-        # self.data.mocap_pos[3]=[-z.as_py()*1.5+0.024,-x.as_py()*1.5+0.019,-y.as_py()*1.5+0.017]
+
 
         [x,y,z]=hand[0]['r_tip1'].values
-        self.data.mocap_pos[0]=[-x.as_py()*1.5-0.025,y.as_py()*1.5+0.022,z.as_py()*1.5+0.098]
+        self.data.mocap_pos[0]=[x.as_py()*1.5-0.025,y.as_py()*1.5+0.022,z.as_py()*1.5+0.098]
         [x,y,z]=hand[0]['r_tip2'].values
-        self.data.mocap_pos[1]=[-x.as_py()*1.5-0.025,y.as_py()*1.5-0.009,z.as_py()*1.5+0.092]
+        self.data.mocap_pos[1]=[x.as_py()*1.5-0.025,y.as_py()*1.5-0.009,z.as_py()*1.5+0.092]
         [x,y,z]=hand[0]['r_tip3'].values
-        self.data.mocap_pos[2]=[-x.as_py()*1.5-0.025,y.as_py()*1.5-0.040,z.as_py()*1.5+0.082]
+        self.data.mocap_pos[2]=[x.as_py()*1.5-0.025,y.as_py()*1.5-0.040,z.as_py()*1.5+0.082]
         [x,y,z]=hand[0]['r_tip4'].values
-        self.data.mocap_pos[3]=[-x.as_py()*1.5+0.024,y.as_py()*1.5+0.019,z.as_py()*1.5+0.017]
-
-
-        # [x,y,z]=hand[0]['r_tip1'].values
-        # self.data.mocap_pos[0]=[x.as_py()*1.5-0.025,y.as_py()*1.5+0.022,z.as_py()*1.5+0.098]
-        # [x,y,z]=hand[0]['r_tip2'].values
-        # self.data.mocap_pos[1]=[x.as_py()*1.5-0.025,y.as_py()*1.5-0.009,z.as_py()*1.5+0.092]
-        # [x,y,z]=hand[0]['r_tip3'].values
-        # self.data.mocap_pos[2]=[x.as_py()*1.5-0.025,y.as_py()*1.5-0.040,z.as_py()*1.5+0.082]
-        # [x,y,z]=hand[0]['r_tip4'].values
-        # self.data.mocap_pos[3]=[x.as_py()*1.5+0.024,y.as_py()*1.5+0.019,z.as_py()*1.5+0.017]
+        self.data.mocap_pos[3]=[x.as_py()*1.5+0.024,y.as_py()*1.5+0.019,z.as_py()*1.5+0.017]
 
 
 
-
-        # self.data.mocap_pos[0]=[-z.as_py()*1.5,-x.as_py()*1.5,-y.as_py()]
-        # self.data.mocap_pos[0]=[0.0,0.0,0.1]
 
 def main():
     """Handle dynamic nodes, ask for the name of the node in the dataflow."""
