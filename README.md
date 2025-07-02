@@ -21,7 +21,14 @@ Aim of this project is to be able to explore humanoid hand possibilities on a re
 
 ![Reachy](assets/Reachy.jpg)
 
-Amazing Hand is a 8 dofs humanoid hand with 4 fingers, 2 phalanxes per finger articulated together, flexible shells allmost everywhere, low-cost (<200€) and open-source.
+Amazing Hand is :
+- 8 dofs humanoid hand with 4 fingers
+- 2 phalanxes per finger articulated together
+- flexible shells allmost everywhere
+- 3D printable
+- 400g weight
+- low-cost (<200€)
+- open-source
 
 [AmazingHand_Overview"](/docs/AmazingHand_Overview.pdf)
 
