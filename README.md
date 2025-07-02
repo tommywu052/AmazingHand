@@ -25,6 +25,7 @@ Amazing Hand is :
 - 8 dofs humanoid hand with 4 fingers
 - 2 phalanxes per finger articulated together
 - flexible shells allmost everywhere
+- All actuators inside the hand, without any cables
 - 3D printable
 - 400g weight
 - low-cost (<200€)
