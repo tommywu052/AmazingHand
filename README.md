@@ -16,12 +16,13 @@ Software work is licensed under a : Apache2
 ![Patterns](assets/Patterns_Overview.jpg)
 
 Robotic hands are often very expensive and not so expressive. More dexterous often needs cables and deported actuators in forearm i.e..
-Aim of this project is to be able to explore humanoid hand possibilities on a real robot, and Reachy2 is the perfect candidate for that !
-Wrist interface is designed for Reachy2's wrist (Orbita 3D), but it can be easily adapted to other robot's wrist...
+
+Aim of this project is to be able to explore humanoid hand possibilities on a real robot (and Reachy2 is the perfect candidate for that !)
+=> Wrist interface is designed for Reachy2's wrist (Orbita 3D), but it can be easily adapted to other robot's wrist...
 
 ![Reachy](assets/Reachy.jpg)
 
-Amazing Hand is a low-cost (<200€) and open-source 4 fingers hand, driven by parallel mechanism.
+Amazing Hand is a 8 dofs humanoid hand with 4 fingers, low-cost (<200€) and open-source, driven by parallel mechanism.
 
 [AmazingHand_Overview"](/docs/AmazingHand_Overview.pdf)
 
