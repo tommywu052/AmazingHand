@@ -129,11 +129,13 @@ SCS0009 servos have smart capaibilities as:
 [Updates history](/docs/changelog.md)  
 
 ## To Do List
-- Design small custom pcb with serial hub and power supply functions
+- Design small custom pcb with serial hub and power supply functions, to fit everything in the hand
 - Test with prehensive tasks 
       => Add smarter behaviour for closing hand, based on avalable motors feedbacks
+- Study possibility to have 4 different fingers length, or add a 5th finger
 - Study possibility to use STS3032 feetedch motors instead of SCS0009
       => Stronger for quite the same volume, but servo horn is different
+- Add fingertip sensor to push one step higher smart control
 
 
 ## FAQ
