@@ -110,7 +110,10 @@ SCS0009 servos have smart capaibilities as:
 [Updates history](/docs/changelog.md)  
 
 ## To Do List
-- 
+- Test with prehensive tasks 
+      => Add smarter behaviour for closing hand, based on avalable motors feedbacks
+- Study possibility to use STS3032 feetedch motors instead of SCS0009
+      => Stronger for quite the same volume, but servo horn is different
 
 
 ## FAQ
@@ -121,6 +124,6 @@ WIP
 
 ## Thank you
 Huge thanks to those who have contributed to this project so far:
-- [Antoine Pirrone](https://github.com/apirrone) for making great demos, all the advice and feedback
+- [Steve N'Guyen](https://fr.linkedin.com/in/stevenguyen) for beta testing and very cool hand tracking demo
 - [Pierre Rouanet](https://github.com/pierre-rouanet) for Feetech motors integration in pypot  
-- [Jeremy Laville](https://www.linkedin.com/in/jeremy-laville-1038b176/) & [Matthieu Lapeyre](https://www.linkedin.com/in/matthieulapeyre/) for mechanical advice and original Reachy 2 Pincette co-development
+- [Augustin Crampette](https://fr.linkedin.com/in/augustin-crampette) & [Matthieu Lapeyre](https://www.linkedin.com/in/matthieulapeyre/) for open discussions and mechanical advices
