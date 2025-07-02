@@ -28,10 +28,12 @@ Upload custom program on arduino board.
 
 Rx arduino pin connected to Tx pin on TTLinker / Tx arduino pin connected to Rx pin on TTLinker
 
-Note that Arduino used in this case is a Mega which have several serial ports embedded, so Serial communication setup need to be as follow :
+- For an arduino Uno (or other small arduinos with only one serial port), Serial communication setup need to be as follow :
+![Arduino_Uno_PortCom](../assets/Arduino_Uno.jpg)
+
+- Note that Arduino used in this case is a Mega which have several serial ports embedded, so Serial communication setup need to be as follow :
 ![Arduino_Mega_PortCom](../assets/Arduino_Mega.jpg)
 
 Rx and Tx pin used on arduino Mega are RX1 & TX1 (19 & 18)
 
-For an arduino Uno (or other small arduinos with only one serial port), Serial communication setup need to be as follow :
-![Arduino_Uno_PortCom](../assets/Arduino_Uno.jpg)
+
