@@ -1,7 +1,7 @@
 """Mujoco Client: This node is used to represent simulated robot, it can be used to read virtual positions, or can be controlled."""
 
 import argparse
-import json
+
 import os
 import time
 
@@ -22,7 +22,7 @@ ROOT_PATH = Path(os.path.dirname(os.path.abspath(__file__))).parent
 class Client:
     """TODO: Add docstring."""
 
-    def __init__(self):
+    def __init__(self, mode='pos'):
         """TODO: Add docstring."""
 
 
@@ -35,40 +35,73 @@ class Client:
 
         self.posture_task = mink.PostureTask(self.model, cost=1e-2)
 
+        if mode=='pos':
+            self.task1 = mink.FrameTask(
+                frame_name='tip1',
+                frame_type="site",
+                position_cost=1.0,
+                orientation_cost=0.0,
+                lm_damping=1.0,
+            )
 
-        self.task1 = mink.FrameTask(
-            frame_name='tip1',
-            frame_type="site",
-            position_cost=1.0,
-            orientation_cost=0.0,
-            lm_damping=1.0,
-        )
+            self.task2 = mink.FrameTask(
+                frame_name='tip2',
+                frame_type="site",
+                position_cost=1.0,
+                orientation_cost=0.0,
+                lm_damping=1.0,
+            )
 
-        self.task2 = mink.FrameTask(
-            frame_name='tip2',
-            frame_type="site",
-            position_cost=1.0,
-            orientation_cost=0.0,
-            lm_damping=1.0,
-        )
+            self.task3 = mink.FrameTask(
+                frame_name='tip3',
+                frame_type="site",
+                position_cost=1.0,
+                orientation_cost=0.0,
+                lm_damping=1.0,
+            )
 
-        self.task3 = mink.FrameTask(
-            frame_name='tip3',
-            frame_type="site",
-            position_cost=1.0,
-            orientation_cost=0.0,
-            lm_damping=1.0,
-        )
+            self.task4 = mink.FrameTask(
+                frame_name='tip4',
+                frame_type="site",
+                position_cost=1.0,
+                orientation_cost=0.0,
+                lm_damping=1.0,
+            )
+        elif mode=='quat': #we control the orientation
+            self.task1 = mink.FrameTask(
+                frame_name='tip1',
+                frame_type="site",
+                position_cost=0.0,
+                orientation_cost=1.0,
+                lm_damping=1.0,
+            )
 
-        self.task4 = mink.FrameTask(
-            frame_name='tip4',
-            frame_type="site",
-            position_cost=1.0,
-            orientation_cost=0.0,
-            lm_damping=1.0,
-        )
+            self.task2 = mink.FrameTask(
+                frame_name='tip2',
+                frame_type="site",
+                position_cost=0.0,
+                orientation_cost=1.0,
+                lm_damping=1.0,
+            )
 
+            self.task3 = mink.FrameTask(
+                frame_name='tip3',
+                frame_type="site",
+                position_cost=0.0,
+                orientation_cost=1.0,
+                lm_damping=1.0,
+            )
 
+            self.task4 = mink.FrameTask(
+                frame_name='tip4',
+                frame_type="site",
+                position_cost=0.0,
+                orientation_cost=1.0,
+                lm_damping=1.0,
+            )
+        else:
+            print(f"Error, unknown mode: {mode}")
+            return -1
         # Regulate all equality constraints with the same cost.
         eq_task = mink.EqualityConstraintTask(self.model, cost=1000.0)
 
@@ -205,8 +238,11 @@ class Client:
                         self.pull_current(self.node, event["metadata"])
                     elif event_id == "write_goal_position":
                         self.write_goal_position(event["value"])
-                    elif event_id == "hand":
-                        self.write_mocap(event["value"])
+                    elif event_id == "hand_pos":
+                        self.write_mocap_pos(event["value"])
+                    elif event_id == "hand_quat":
+                        self.write_mocap_quat(event["value"])
+
                     elif event_id == "end":
                         break
 
@@ -234,8 +270,8 @@ class Client:
         for i, joint in enumerate(joints):
             self.data.joint(joint.as_py()).qpos[0] = goal_position[i].as_py()
 
-    def write_mocap(self, hand):
-        # print(hand)
+    def write_mocap_pos(self, hand):
+
         #please, a method to access the mocap objects by name...
 
 
@@ -249,13 +285,33 @@ class Client:
         self.data.mocap_pos[3]=[x.as_py()*1.5+0.024,y.as_py()*1.5+0.019,z.as_py()*1.5+0.017]
 
 
+    def write_mocap_quat(self, hand):
+        #please, a method to access the mocap objects by name...
+
+
+        [w,x,y,z]=hand[0]['r_tip1'].values
+        self.data.mocap_quat[0]=[w.as_py(),x.as_py(),y.as_py(),z.as_py()]
+
+        [w,x,y,z]=hand[0]['r_tip2'].values
+        self.data.mocap_quat[1]=[w.as_py(),x.as_py(),y.as_py(),z.as_py()]
+
+        [w,x,y,z]=hand[0]['r_tip3'].values
+        self.data.mocap_quat[2]=[w.as_py(),x.as_py(),y.as_py(),z.as_py()]
+
+        [w,x,y,z]=hand[0]['r_tip4'].values
+        self.data.mocap_quat[3]=[w.as_py(),x.as_py(),y.as_py(),z.as_py()]
+
+
 
 
 def main():
     """Handle dynamic nodes, ask for the name of the node in the dataflow."""
 
-
-    client = Client()
+    parser = argparse.ArgumentParser()
+    parser.add_argument("-m", "--mode", type=str, choices=['pos','quat'], default='pos',
+                    help="control mode: pos=position (we control the position of the tip) quat=quaternion (we control the orientation of the tip)")
+    args = parser.parse_args()
+    client = Client(args.mode)
     client.run()
 
 

@@ -144,10 +144,17 @@ fn main() -> Result<(), Box<dyn Error>> {
 
                             motors_ids.push(finger.motor1.id);
                             motors_ids.push(finger.motor2.id);
-                            motors_goalpos
-                                .push(buffer[finger1_idx[0] as usize] + finger.motor1.offset);
-                            motors_goalpos
-                                .push(buffer[finger1_idx[1] as usize] + finger.motor2.offset);
+
+                            let mut m1goal = buffer[finger1_idx[0] as usize] + finger.motor1.offset;
+                            if finger.motor1.invert {
+                                m1goal = -m1goal;
+                            }
+                            motors_goalpos.push(m1goal);
+                            let mut m2goal = buffer[finger1_idx[1] as usize] + finger.motor2.offset;
+                            if finger.motor2.invert {
+                                m2goal = -m2goal;
+                            }
+                            motors_goalpos.push(m2goal);
 
                             // controller.write_goal_position(
                             //     finger.motor1.id,

@@ -8,12 +8,15 @@
 
 - Clone this repository and in a console from the directory run:
 - `uv venv`
-- To run in simulation only:
-  - `dora build dataflow_simu.yml --uv` (needs to be done only once)
-  - `dora run dataflow_simu.yml --uv`
-- To run with real hardware:
-  - `dora build dataflow_real.yml --uv` (needs to be done only once)
-  - `dora run dataflow_real.yml --uv`
+- To run the webcam hand tracking demo in simulation only:
+  - `dora build dataflow_tracking_simu.yml --uv` (needs to be done only once)
+  - `dora run dataflow_tracking_simu.yml --uv`
+- To run the webcam hand tracking demo with real hardware:
+  - `dora build dataflow_tracking_real.yml --uv` (needs to be done only once)
+  - `dora run dataflow_tracking_real.yml --uv`
+- To run a simple example to control the finger angles in simulation:
+  - `dora build dataflow_angle_simu.yml --uv` (needs to be done only once)
+  - `dora run dataflow_angle_simu.yml --uv`
 
 
 ## Hand Setup

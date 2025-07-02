@@ -5,13 +5,13 @@ nodes:
     inputs:
       tick: dora/timer/millis/50
     outputs:
-      - hand
+      - hand_pos
 
   - id: hand_simulation
     build: pip install -e AHSimulation
     path: AHSimulation/AHSimulation/mj_mink_right.py
     inputs:
-      hand: hand_tracker/hand
+      hand_pos: hand_tracker/hand_pos
       tick: dora/timer/millis/2
       tick_ctrl: dora/timer/millis/10
     outputs:
