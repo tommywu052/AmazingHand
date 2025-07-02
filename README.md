@@ -8,7 +8,7 @@
 Amazing Hand is a low-cost (<200€) and open-source 4 fingers hand, driven by parallel actuation.
 [docs/AmazingHand_Overview.pdf]
 Small Feetech SCS0009 servos are used to move each finger in flexion / extension, & Abduction / Adduction
-!(Assets/Finger_Overview.jpg)
+![Finger Overview](assets/Finger_Overview.jpg)
 
 2 ways of control are available :
 - Use a Serial bus driver (waveshare i.e.) + Python script
@@ -36,7 +36,8 @@ Detailed explaination are available for both and Basic demo software is availabl
 ## BOM (Bill Of Materials)
 The list of all needed components is available here:  
 [AmazingHand BOM](https://docs.google.com/spreadsheets/d/1QH2ePseqXjAhkWdS9oBYAcHPrxaxkSRCgM_kOK0m52E/edit?gid=1269903342#gid=1269903342)  
-!(Assets/BOM.jpg)
+![BOM](assets/BOM.jpg)
++ Control choice (2 options detailed previously)
 
 ## STL Files and Onshape document
 STL and Steps files can be found [here](https://github.com/pollen-robotics/AmazingHand/tree/main/cad)  
@@ -49,10 +50,12 @@ Note that predefined position are available in "named position" tooling, with co
 
 ## Assembly Guide
 Here is guide to explain how to print all the needed custom parts :
+[=> 3D Printing Guide](/docs/AmazingHand_3D printing tips.pdf)
+![3DPrint Example](/assets/images/3DPrint.jpg) 
 
 And then how to use them to build the Amazing Hand in combination with standards components in the BOM.  
-[=> Assembly Guide](/docs/PincOpen_Assembly_Instructions.pdf)  
-![Assembly Example](/assets/images/assembly_example.png)  
+[=> Assembly Guide](/docs/AmazingHand_Assembly.pdf)  
+![Assembly Example](/assets/images/assembly.jpg)  
 
 ## Basic Demo
   
