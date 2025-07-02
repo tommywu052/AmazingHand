@@ -10,13 +10,10 @@ Mechanical design is licensed under a :
 
 Software work is licensed under a : Apache2
 
-
-# AmazingHand (a.k.a AH!) Project
-
-[![Demo](https://img.youtube.com/vi/U0TfeG3ZUto/maxresdefault.jpg)](https://www.youtube.com/watch?v=U0TfeG3ZUto)
-
-
 # Amazing Hand project
+
+![AmazingHand](assets/AmazingHand_Couv.jpg)
+![Patterns](assets/Patterns_Overview.jpg)
 
 Robotic hands are often very expensive and not so expressive. More dexterous often needs cables and deported actuators in forearm i.e..
 Aim of this project is to be able to explore humanoid hand possibilities on a real robot, and Reachy2 is the perfect candidate for that !
@@ -48,8 +45,9 @@ Up to you !
     - [BOM (Bill Of Materials)](#bom-bill-of-materials)
     - [STL Files and Onshape document](#stl-files-and-onshape-document)
     - [Assembly Guide](#assembly-guide)
-    - [Run basic Demo](#Run-basic-Demo)
+    - [Run_basic_Demo](#Run-basic-Demo)
 - [Disclaimer](#disclaimer)
+- [AmazingHand_tracking Demo](#AmazingHand_tracking_Demo) 
 - [Project Updates & Community](#project-updates--community)
     - [Updates history](#updates-history)
     - [Project posts](#project-posts)
@@ -105,6 +103,12 @@ SCS0009 servos have smart capaibilities as:
 - Current position sensor
 - Heat temperature feedback
 - ...
+
+
+# AmazingHand tracking Demo
+[![Demo](https://img.youtube.com/vi/U0TfeG3ZUto/maxresdefault.jpg)](https://www.youtube.com/watch?v=U0TfeG3ZUto)
+
+
 
 
 # Project Updates & Community
