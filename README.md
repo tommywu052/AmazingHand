@@ -16,26 +16,27 @@ Software work is licensed under a : Apache2
 
 Robotic hands are often very expensive and not so expressive. More dexterous often needs cables and deported actuators in forearm i.e..
 
-Aim of this project is to be able to explore humanoid hand possibilities on a real robot (and Reachy2 is the perfect candidate for that !)
+Aim of this project is to be able to explore humanoid hand possibilities on a real robot (and Reachy2 is the perfect candidate for that !) with moderate cost.
 => Wrist interface is designed for Reachy2's wrist (Orbita 3D), but it can be easily adapted to other robot's wrist...
 
 ![Reachy](assets/Reachy.jpg)
 
-Amazing Hand is a 8 dofs humanoid hand with 4 fingers, low-cost (<200€) and open-source, driven by parallel mechanism.
+Amazing Hand is a 8 dofs humanoid hand with 4 fingers, 2 phalanxes per finger articulated together, flexible shells allmost everywhere, low-cost (<200€) and open-source.
 
 [AmazingHand_Overview"](/docs/AmazingHand_Overview.pdf)
 
 ![Hand Overview](assets/Hand_Overview.jpg)
-
-Small Feetech SCS0009 servos are used to move each finger in flexion / extension, & Abduction / Adduction
+Each finger is driven by parallel mechanism. 
+That means 2x small Feetech SCS0009 servos are used to move each finger in flexion / extension & Abduction / Adduction
 
 ![Finger Overview](assets/Finger_Overview.jpg)
 
 
 2 ways of control are available :
 - Use a Serial bus driver (waveshare i.e.) + Python script
-- Use an arduino + feetech TTL Linker
-Detailed explaination are available for both and Basic demo software is available also.
+- Use an Arduino + feetech TTL Linker
+
+Detailed explaination are available for both ways and Basic demo software is available also.
 Up to you !
 
 
@@ -63,13 +64,19 @@ List of all needed components is available here:
 [AmazingHand BOM](https://docs.google.com/spreadsheets/d/1QH2ePseqXjAhkWdS9oBYAcHPrxaxkSRCgM_kOK0m52E/edit?gid=1269903342#gid=1269903342)  
 ![BOM](assets/BOM.jpg)
 
+And remember to add control choice cost (2 options detailed previously)
+
+
 Detailed for custom 3D printed parts are here : 
 [3Dprinted parts](https://docs.google.com/spreadsheets/d/1QH2ePseqXjAhkWdS9oBYAcHPrxaxkSRCgM_kOK0m52E/edit?gid=2050623549#gid=2050623549)
 
 ![3Dparts](assets/3Dparts.jpg)
 
+Here is guide to explain how to print all the needed custom parts :
+[=> 3D Printing Guide](/docs/AmazingHand_3DprintingTips.pdf)
+![3DPrint_example](/assets/3DPrint.jpg) 
 
-+ Control choice (2 options detailed previously)
+
 
 ## STL Files and Onshape document
 STL and Steps files can be found [here](https://github.com/pollen-robotics/AmazingHand/tree/main/cad)  
@@ -81,9 +88,7 @@ Everyone can access the Onshape document too:
 Note that predefined position are available in "named position" tooling, with corresponding servos angles
 
 ## Assembly Guide
-Here is guide to explain how to print all the needed custom parts :
-[=> 3D Printing Guide](/docs/AmazingHand_3DprintingTips.pdf)
-![3DPrint_example](/assets/3DPrint.jpg) 
+
 
 And then how to use them to build the Amazing Hand in combination with standards components in the BOM.  
 [=> Assembly Guide](/docs/AmazingHand_Assembly.pdf)  
