@@ -50,12 +50,12 @@ Note that predefined position are available in "named position" tooling, with co
 
 ## Assembly Guide
 Here is guide to explain how to print all the needed custom parts :
-[=> 3D Printing Guide](/docs/AmazingHand_3D printing tips.pdf)
-![3DPrint Example](/assets/images/3DPrint.jpg) 
+[=> 3D Printing Guide](/docs/AmazingHand_3Dprintingtips.pdf)
+![3DPrint](/assets/3DPrint.jpg) 
 
 And then how to use them to build the Amazing Hand in combination with standards components in the BOM.  
 [=> Assembly Guide](/docs/AmazingHand_Assembly.pdf)  
-![Assembly Example](/assets/images/assembly.jpg)  
+![Assembly](/assets/assembly.jpg)  
 
 ## Basic Demo
   
