@@ -70,7 +70,9 @@ And then how to use them to build the Amazing Hand in combination with standards
 ![Assembly_example](/assets/Assembly.jpg)  
 
 ## Basic Demo
-  
+
+Basic Demo which is available with both Python & Arduino.
+[Demo](assets/AmazingHand_BasicDemo.mov)
 
 # Project Updates & Community
 ## Updates history
