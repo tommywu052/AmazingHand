@@ -110,6 +110,8 @@ Basic Demo which is available with both Python & Arduino.
 
 # Disclaimer
 
+I noticed some variations between theorical angles for Flexion / Extension, Abduction / Adduction and angles in real life prototypes. This is probably due to several sources of variation (3D printed parts are not perfect, balljoint rods are manually adjusted one by one, esrvo horn rework, flexibility of plastic parts...).
+
 This design has not yet bene tested for long and complex prehensive tasks. Before to be able to grasp objetcs safely (that means without damaging servos or mehanical parts), kind of smart software need to be build.
 SCS0009 servos have smart capaibilities as:
 - Torque enable / disable
