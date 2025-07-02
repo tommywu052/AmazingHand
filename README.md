@@ -17,15 +17,22 @@ Software work is licensed under a : Apache2
 
 
 # Amazing Hand project
-Amazing Hand is a low-cost (<200€) and open-source 4 fingers hand, driven by parallel actuation.
+
+Robotic hands are often very expensive and not so expressive. More dexterous often needs cables and deported actuators in forearm i.e..
+Aim of this project is to be able to explore humanoid hand possibilities on a real robot, and Reachy2 is the perfect candidate for that !
+![Reachy](assets/Reachy.jpg)
+
+Amazing Hand is a low-cost (<200€) and open-source 4 fingers hand, driven by parallel mechanism.
 [docs/AmazingHand_Overview.pdf]
 Small Feetech SCS0009 servos are used to move each finger in flexion / extension, & Abduction / Adduction
 ![Finger Overview](assets/Finger_Overview.jpg)
 
+
 2 ways of control are available :
 - Use a Serial bus driver (waveshare i.e.) + Python script
 - Use an arduino + feetech TTL Linker
-Detailed explaination are available for both and Basic demo software is available also. Up to you !
+Detailed explaination are available for both and Basic demo software is available also.
+Up to you !
 
 
 ## Table of contents
@@ -34,7 +41,8 @@ Detailed explaination are available for both and Basic demo software is availabl
     - [BOM (Bill Of Materials)](#bom-bill-of-materials)
     - [STL Files and Onshape document](#stl-files-and-onshape-document)
     - [Assembly Guide](#assembly-guide)
-    - [Run basic Demo](#Run basic Demo)
+    - [Run basic Demo](#Run-basic-Demo)
+- [Disclaimer](#disclaimer)
 - [Project Updates & Community](#project-updates--community)
     - [Updates history](#updates-history)
     - [Project posts](#project-posts)
@@ -69,10 +77,21 @@ And then how to use them to build the Amazing Hand in combination with standards
 [=> Assembly Guide](/docs/AmazingHand_Assembly.pdf)  
 ![Assembly_example](/assets/Assembly.jpg)  
 
-## Basic Demo
+## Run basic Demo
 
 Basic Demo which is available with both Python & Arduino.
 [Demo](assets/AmazingHand_BasicDemo.mov)
+
+# Disclaimer
+
+This design has not yet bene tested for long and complex prehensive tasks. Before to be able to grasp objetcs safely (that means without damaging servos or mehanical parts), kind of smart software need to be build.
+SCS0009 servos have smart capaibilities as:
+- Torque enable / disable
+- Torque feedback
+- Current position sensor
+- Heat temperature feedback
+- ...
+
 
 # Project Updates & Community
 ## Updates history
