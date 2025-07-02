@@ -12,7 +12,6 @@ Software work is licensed under a : Apache2
 
 # Amazing Hand project
 
-![AmazingHand](assets/AmazingHand_Couv.jpg)
 ![Patterns](assets/Patterns_Overview.jpg)
 
 Robotic hands are often very expensive and not so expressive. More dexterous often needs cables and deported actuators in forearm i.e..
