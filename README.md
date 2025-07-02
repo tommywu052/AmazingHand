@@ -90,10 +90,11 @@ Here is guide to explain how to print all the needed custom parts :
 STL and Steps files can be found [here](https://github.com/pollen-robotics/AmazingHand/tree/main/cad)  
 
 Everyone can access the Onshape document too:   
-[Link Onshape](To be Updated)  
-![AmazingHand onshape picture](To be Updated)  
+[Link Onshape](https://cad.onshape.com/documents/fb0923073e8e7a4d8f326f1d/w/490af5bbfa85e2da34dac552/e/9442afd0fd2f72cef1c38400))  
 
 Note that predefined position are available in "named position" tooling, with corresponding servos angles
+
+![Onshape&Named_Pos](/assets/Named_Pos.jpg)  
 
 ## Assembly Guide
 
