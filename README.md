@@ -3,7 +3,6 @@
 [![Demo](https://img.youtube.com/vi/U0TfeG3ZUto/maxresdefault.jpg)](https://www.youtube.com/watch?v=U0TfeG3ZUto)
 
 
-
 # Amazing Hand project
 Amazing Hand is a low-cost (<200€) and open-source 4 fingers hand, driven by parallel actuation.
 [docs/AmazingHand_Overview.pdf]
@@ -43,19 +42,19 @@ The list of all needed components is available here:
 STL and Steps files can be found [here](https://github.com/pollen-robotics/AmazingHand/tree/main/cad)  
 
 Everyone can access the Onshape document too:   
-[Link Onshape](https://cad.onshape.com/documents/96518c699fd03eea508b06d3/w/d5f95a6266b027d84ae48634/e/e41e675b82a4f671f01336e0)  
-![pincopen onshape picture](/assets/images/pincopen_onshape.png)  
+[Link Onshape](To be Updated)  
+![AmazingHand onshape picture](To be Updated)  
 
 Note that predefined position are available in "named position" tooling, with corresponding servos angles
 
 ## Assembly Guide
 Here is guide to explain how to print all the needed custom parts :
-[=> 3D Printing Guide](/docs/AmazingHand_3Dprintingtips.pdf)
-![3DPrint](/assets/3DPrint.jpg) 
+[=> 3D Printing Guide](/docs/AmazingHand_3DprintingTips.pdf)
+![3DPrint_example](/assets/3DPrint.jpg) 
 
 And then how to use them to build the Amazing Hand in combination with standards components in the BOM.  
 [=> Assembly Guide](/docs/AmazingHand_Assembly.pdf)  
-![Assembly](/assets/assembly.jpg)  
+![Assembly_example](/assets/Assembly.jpg)  
 
 ## Basic Demo
   
