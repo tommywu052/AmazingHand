@@ -1,3 +1,9 @@
+Mechanical design is licensed under a : [Creative Commons Attribution-ShareAlike 4.0 International License][cc-by-sa].
+[![CC BY-SA 4.0][cc-by-sa-image]][cc-by-sa]
+
+Software work is licensed under a : 
+
+
 # AmazingHand (a.k.a AH!) Project
 
 [![Demo](https://img.youtube.com/vi/U0TfeG3ZUto/maxresdefault.jpg)](https://www.youtube.com/watch?v=U0TfeG3ZUto)
