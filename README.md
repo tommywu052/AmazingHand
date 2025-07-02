@@ -20,11 +20,17 @@ Software work is licensed under a : Apache2
 
 Robotic hands are often very expensive and not so expressive. More dexterous often needs cables and deported actuators in forearm i.e..
 Aim of this project is to be able to explore humanoid hand possibilities on a real robot, and Reachy2 is the perfect candidate for that !
+
 ![Reachy](assets/Reachy.jpg)
 
 Amazing Hand is a low-cost (<200€) and open-source 4 fingers hand, driven by parallel mechanism.
-[docs/AmazingHand_Overview.pdf]
+
+[AmazingHand_Overview"](/docs/AmazingHand_Overview.pdf)
+
+![Hand Overview](assets/Hand_Overview.jpg)
+
 Small Feetech SCS0009 servos are used to move each finger in flexion / extension, & Abduction / Adduction
+
 ![Finger Overview](assets/Finger_Overview.jpg)
 
 
