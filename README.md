@@ -98,14 +98,26 @@ Note that predefined position are available in "named position" tooling, with co
 
 ## Assembly Guide
 
-
-And then how to use them to build the Amazing Hand in combination with standards components in the BOM.  
+Assembly guide for the Amazing Hand in combination with standards components in the BOM is here :  
 [=> Assembly Guide](/docs/AmazingHand_Assembly.pdf)  
 ![Assembly_example](/assets/Assembly.jpg)  
+
+You will need simple program / script to calibrate each fingers, available here :
+- With Python & Waveshare serial bus driver : [here](https://github.com/pollen-robotics/AmazingHand/tree/main/PythonExample)
+- With Arduino & TTLinker : [here](https://github.com/pollen-robotics/AmazingHand/tree/main/ArduinoExample)
 
 ## Run basic Demo
 
 Basic Demo which is available with both Python & Arduino.
+
+You will need external power supply to be able to power the 8 actuators inside the hand. 
+Check on the Bom List :
+[AmazingHand BOM](https://docs.google.com/spreadsheets/d/1QH2ePseqXjAhkWdS9oBYAcHPrxaxkSRCgM_kOK0m52E/edit?gid=1269903342#gid=1269903342) 
+
+- Python script : "AmazingHand_Demo.py" [here](https://github.com/pollen-robotics/AmazingHand/tree/main/ArduinoExample)
+  
+- Arduino program : "AmazingHand_Demo.ino" [here](https://github.com/pollen-robotics/AmazingHand/tree/main/PythonExample)
+
 [Demo](assets/AmazingHand_BasicDemo.mov)
 
 # Disclaimer
