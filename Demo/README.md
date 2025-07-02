@@ -21,9 +21,9 @@
 
 ## Hand Setup
 
-![alt text](docs/finger.png "Motors naming for each finger")
+![Motors naming](docs/finger.png "Motors naming for each finger")
 
-![alt text](docs/r_hand.png "Fingers naming for each hand")
+![Fingers naming](docs/r_hand.png "Fingers naming for each hand")
 
 Be sure to adapt the configuration file [r_hand.toml](AHControl/config/r_hand.toml) for your particular hand.
 You can use the software tools located in [AHControl](AHControl).
