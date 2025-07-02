@@ -66,6 +66,7 @@ List of all needed components is available here:
 
 Detailed for custom 3D printed parts are here : 
 [3Dprinted parts](https://docs.google.com/spreadsheets/d/1QH2ePseqXjAhkWdS9oBYAcHPrxaxkSRCgM_kOK0m52E/edit?gid=2050623549#gid=2050623549)
+
 ![3Dparts](assets/3Dparts.jpg)
 
 
