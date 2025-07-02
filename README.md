@@ -116,6 +116,7 @@ SCS0009 servos have smart capaibilities as:
 [Updates history](/docs/changelog.md)  
 
 ## To Do List
+- Design small custom pcb with serial hub and power supply functions
 - Test with prehensive tasks 
       => Add smarter behaviour for closing hand, based on avalable motors feedbacks
 - Study possibility to use STS3032 feetedch motors instead of SCS0009
