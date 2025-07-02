@@ -110,7 +110,9 @@ You will need simple program / script to calibrate each fingers, available here 
 
 Basic Demo which is available with both Python & Arduino.
 
-You will need external power supply to be able to power the 8 actuators inside the hand. 
+You will need external power supply to be able to power the 8 actuators inside the hand.
+
+If you don't have one already, simple external power supply could be a DC/DC 220V -> 5V / 2A adapter with jack connector.
 Check on the Bom List :
 [AmazingHand BOM](https://docs.google.com/spreadsheets/d/1QH2ePseqXjAhkWdS9oBYAcHPrxaxkSRCgM_kOK0m52E/edit?gid=1269903342#gid=1269903342) 
 
