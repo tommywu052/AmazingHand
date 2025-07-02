@@ -60,9 +60,15 @@ Up to you !
 
 # Build Resources
 ## BOM (Bill Of Materials)
-The list of all needed components is available here:  
+List of all needed components is available here:  
 [AmazingHand BOM](https://docs.google.com/spreadsheets/d/1QH2ePseqXjAhkWdS9oBYAcHPrxaxkSRCgM_kOK0m52E/edit?gid=1269903342#gid=1269903342)  
 ![BOM](assets/BOM.jpg)
+
+Detailed for custom 3D printed parts are here : 
+[3Dprinted parts](https://docs.google.com/spreadsheets/d/1QH2ePseqXjAhkWdS9oBYAcHPrxaxkSRCgM_kOK0m52E/edit?gid=2050623549#gid=2050623549)
+![3Dparts](assets/3Dparts.jpg)
+
+
 + Control choice (2 options detailed previously)
 
 ## STL Files and Onshape document
