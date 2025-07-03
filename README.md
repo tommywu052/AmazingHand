@@ -165,6 +165,6 @@ WIP
 
 ## Thank you
 Huge thanks to those who have contributed to this project so far:
-- [Steve N'Guyen](https://fr.linkedin.com/in/stevenguyen) for beta testing and very cool hand tracking demo
+- [Steve N'Guyen](https://github.com/SteveNguyen) for beta testing, Feetech motors integration in Rustypot, Mujoco/Mink and hand tracking demo
 - [Pierre Rouanet](https://github.com/pierre-rouanet) for Feetech motors integration in pypot  
 - [Augustin Crampette](https://fr.linkedin.com/in/augustin-crampette) & [Matthieu Lapeyre](https://www.linkedin.com/in/matthieulapeyre/) for open discussions and mechanical advices
