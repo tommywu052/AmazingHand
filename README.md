@@ -86,8 +86,10 @@ Here is guide to explain how to print all the needed custom parts :
 
 
 
-## STL Files and Onshape document
-STL and Steps files can be found [here](https://github.com/pollen-robotics/AmazingHand/tree/main/cad)  
+## CAD Files and Onshape document
+STL and Steps files can be found [here](https://github.com/pollen-robotics/AmazingHand/tree/main/cad) 
+
+Note that Fingers are the same if you want to build a left hand, but some parts are symetrical. Specific right hand parts are preceded by an "R", and other of the left hand parts by an "L".
 
 Everyone can access the Onshape document too:   
 [Link Onshape](https://cad.onshape.com/documents/fb0923073e8e7a4d8f326f1d/w/490af5bbfa85e2da34dac552/e/9442afd0fd2f72cef1c38400))  
