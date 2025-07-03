@@ -154,6 +154,7 @@ For more advanced usage using inverse/forward kinematics there are several examp
 - Study possibility to have 4 different fingers length, or add a 5th finger
 - Study possibility to use STS3032 feetedch motors instead of SCS0009
       => Stronger for quite the same volume, but servo horn is different
+- Study possibility to add compliancy by replacing rigid links to springs
 - Add fingertip sensor to push one step higher smart control
 
 
