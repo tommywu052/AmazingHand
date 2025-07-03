@@ -140,7 +140,7 @@ SCS0009 servos have smart capaibilities as:
 # AmazingHand advanced Demo
 [![Tracking demo](https://img.youtube.com/vi/U0TfeG3ZUto/maxresdefault.jpg)](https://www.youtube.com/watch?v=U0TfeG3ZUto)
 
-For more advanced usage using inverse/forward kinematics there are several examples in the [Demo](Demo) directory.
+For more advanced usage using inverse/forward kinematics there are several examples in the [Demo](Demo) directory along with some useful tools to test/configure the motors.
 
 
 # Project Updates & Community
