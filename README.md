@@ -120,7 +120,9 @@ Check on the Bom List :
   
 - Arduino program : "AmazingHand_Demo.ino" [here](https://github.com/pollen-robotics/AmazingHand/tree/main/PythonExample)
 
-[Demo](assets/AmazingHand_BasicDemo.mov)
+
+https://github.com/user-attachments/assets/485fc1f4-cc57-4e59-90b5-e84518b9fed0
+
 
 # Disclaimer
 
