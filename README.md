@@ -31,7 +31,7 @@ Amazing Hand is :
 - low-cost (<200€)
 - open-source
 
-[AmazingHand_Overview"](/docs/AmazingHand_Overview.pdf)
+[AmazingHand_Overview](/docs/AmazingHand_Overview.pdf)
 
 ![Hand Overview](assets/Hand_Overview.jpg)
 Each finger is driven by parallel mechanism. 
