@@ -8,7 +8,7 @@ Mechanical design is licensed under a :
 [cc-by-sa-image]: https://licensebuttons.net/l/by-sa/4.0/88x31.png
 [cc-by-sa-shield]: https://img.shields.io/badge/License-CC%20BY--SA%204.0-lightgrey.svg
 
-Software work is licensed under a : Apache2
+Software work is licensed under [Apache 2.0](https://www.apache.org/licenses/LICENSE-2.0)
 
 # Amazing Hand project
 
@@ -137,10 +137,10 @@ SCS0009 servos have smart capaibilities as:
 - ...
 
 
-# AmazingHand tracking Demo
-[![Demo](https://img.youtube.com/vi/U0TfeG3ZUto/maxresdefault.jpg)](https://www.youtube.com/watch?v=U0TfeG3ZUto)
+# AmazingHand advanced Demo
+[![Tracking demo](https://img.youtube.com/vi/U0TfeG3ZUto/maxresdefault.jpg)](https://www.youtube.com/watch?v=U0TfeG3ZUto)
 
-
+For more advanced usage using inverse/forward kinematics there are several examples in the [Demo](Demo) directory.
 
 
 # Project Updates & Community
