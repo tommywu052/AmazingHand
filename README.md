@@ -52,7 +52,7 @@ Up to you !
 
 - [Build Resources](#build-resources)
     - [BOM (Bill Of Materials)](#bom-bill-of-materials)
-    - [STL Files and Onshape document](#stl-files-and-onshape-document)
+    - [STL Files and Onshape document](#CAD-files-and-onshape-document)
     - [Assembly Guide](#assembly-guide)
     - [Run_basic_Demo](#Run-basic-Demo)
 - [Disclaimer](#disclaimer)
