@@ -96,7 +96,7 @@ Note that Fingers are the same if you want to build a left hand, but some parts 
 ![Heart](/assets/Heart.jpg)
 
 Everyone can access the Onshape document too:   
-[Link Onshape](https://cad.onshape.com/documents/430ff184cf3dd9557aaff2be/w/e3658b7152c139971d22c688/e/d79fbb3641873de0a515037e)  
+[Link Onshape](https://cad.onshape.com/documents/430ff184cf3dd9557aaff2be/w/e3658b7152c139971d22c688/e/bd399bf1860732c6c6a2ee45?renderMode=0&uiState=6867fd3ef773466d059edf0c)  
 
 Note that predefined position are available in "named position" tooling, with corresponding servos angles
 
