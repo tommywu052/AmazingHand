@@ -112,6 +112,13 @@ You will need simple program / script to calibrate each fingers, available here 
 - With Python & Waveshare serial bus driver : [here](https://github.com/pollen-robotics/AmazingHand/tree/main/PythonExample)
 - With Arduino & TTLinker : [here](https://github.com/pollen-robotics/AmazingHand/tree/main/ArduinoExample)
 
+
+Note that this assembly guide is for a standalone Right hand.
+
+If you need to build a standalone Left hand, you can keep the sames IDs for servos location, and select if it's a right or left hand in the software.
+
+BUT, if you need to build both right and left hands to plug them on a robot, you will have to attribute differents IDs for right and left hands. You can't have same ID for different servos on the same serial bus...
+
 ## Run basic Demo
 
 Basic Demo which is available with both Python & Arduino.
