@@ -161,6 +161,7 @@ For more advanced usage using inverse/forward kinematics there are several examp
 
 Amazing Base for the amazing hand : 
 ![Base](assets/Base.jpg)
+STL or Step file can be found [here](https://github.com/pollen-robotics/AmazingHand/tree/main/cad) 
 
 Specific Chinese BOM available here :
 [Chinese BOM](https://docs.google.com/spreadsheets/d/1fHZiTky79vyZwICj5UGP2c_RiuLLm89K8HrB3vpb2h4/edit?gid=837395814#gid=837395814)
