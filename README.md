@@ -175,6 +175,11 @@ For more advanced usage using inverse/forward kinematics there are several examp
 WIP
 
 ## Contact
+
+You can reach Public discord channel here : 
+[Discord AmazingHand](https://discord.com/channels/519098054377340948/1395021147346698300)
+
+Or 
 [Contact me or Pollen Robotics](/docs/contact.md)
 
 ## Thank you
