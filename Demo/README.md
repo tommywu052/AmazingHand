@@ -7,7 +7,7 @@
   - start the daemon: `dora up`
 
 - Clone this repository and in a console from the directory run:
-- `uv venv`
+- `uv venv --python 3.12`
 - To run the webcam hand tracking demo in simulation only:
   - `dora build dataflow_tracking_simu.yml --uv` (needs to be done only once)
   - `dora run dataflow_tracking_simu.yml --uv`
