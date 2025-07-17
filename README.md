@@ -171,7 +171,7 @@ Thanks to Jianliang Shen !
 ## To Do List
 - Design small custom pcb with serial hub and power supply functions, to fit everything in the hand
 - Test with prehensive tasks 
-      => Add smarter behaviour for closing hand, based on avalable motors feedbacks
+      => Add smarter behaviour for closing hand, based on available motors feedbacks
 - Study possibility to have 4 different fingers length, or add a 5th finger
 - Study possibility to use STS3032 feetedch motors instead of SCS0009
       => Stronger for quite the same volume, but servo horn is different
