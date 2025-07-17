@@ -163,7 +163,7 @@ def main():
                     frame,res=process_img(hands,frame)
 
                     if res is not None:
-                        node.send_output('hand',pa.array(res))
+                        node.send_output('hand_pos',pa.array(res))
                     # cv2.imshow('MediaPipe Hands', cv2.flip(frame, 1))
                     cv2.imshow('MediaPipe Hands', frame)
                     if cv2.waitKey(1) & 0xFF == ord("q"):
