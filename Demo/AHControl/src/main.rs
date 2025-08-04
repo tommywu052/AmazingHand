@@ -175,7 +175,7 @@ fn main() -> Result<(), Box<dyn Error>> {
                 }
                 other => println!("Received input `{other}`"),
             },
-            Event::Stop => {
+            Event::Stop(_) => {
                 eprintln!("Received manual stop");
                 return Ok(());
             }
