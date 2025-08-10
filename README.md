@@ -52,11 +52,6 @@ Up to you !
 
 ## Table of contents
 
-- [Build Resources](#build-resources)
-    - [BOM (Bill Of Materials)](#bom-bill-of-materials)
-    - [CAD Files and Onshape document](#CAD-files-and-onshape-document)
-    - [Assembly Guide](#assembly-guide)
-    - [Run_basic_Demo](#Run-basic-Demo)
 - [Python-based Hand Tracking System](#python-based-hand-tracking-system)
     - [Features](#features)
     - [Files](#files)
@@ -68,6 +63,11 @@ Up to you !
     - [Control Modes](#control-modes)
     - [Configuration](#configuration)
     - [Hardware Requirements](#hardware-requirements)
+- [Build Resources](#build-resources)
+    - [BOM (Bill Of Materials)](#bom-bill-of-materials)
+    - [CAD Files and Onshape document](#CAD-files-and-onshape-document)
+    - [Assembly Guide](#assembly-guide)
+    - [Run_basic_Demo](#Run-basic-Demo)
 - [Disclaimer](#disclaimer)
 - [AmazingHand_tracking Demo](#AmazingHand_tracking_Demo) 
 - [Project Updates & Community](#project-updates--community)
@@ -77,75 +77,6 @@ Up to you !
     - [FAQ](#faq)
     - [Contact](#contact)
     - [Thank you](#thank-you)
-
-
-# Build Resources
-## BOM (Bill Of Materials)
-List of all needed components is available here:  
-[AmazingHand BOM](https://docs.google.com/spreadsheets/d/1QH2ePseqXjAhkWdS9oBYAcHPrxaxkSRCgM_kOK0m52E/edit?gid=1269903342#gid=1269903342)  
-![BOM](assets/BOM.jpg)
-
-And remember to add control choice cost (2 options detailed previously)
-
-
-Detailed for custom 3D printed parts are here : 
-[3Dprinted parts](https://docs.google.com/spreadsheets/d/1QH2ePseqXjAhkWdS9oBYAcHPrxaxkSRCgM_kOK0m52E/edit?gid=2050623549#gid=2050623549)
-
-![3Dparts](assets/3Dparts.jpg)
-
-Here is guide to explain how to print all the needed custom parts :
-[=> 3D Printing Guide](/docs/AmazingHand_3DprintingTips.pdf)
-![3DPrint_example](/assets/3DPrint.jpg) 
-
-
-
-## CAD Files and Onshape document
-STL and Steps files can be found [here](https://github.com/pollen-robotics/AmazingHand/tree/main/cad) 
-
-Note that Fingers are the same if you want to build a left hand, but some parts are symetrical. Specific right hand parts are preceded by an "R", and other of the left hand parts by an "L".
-
-![Heart](/assets/Heart.jpg)
-
-Everyone can access the Onshape document too:   
-[Link Onshape](https://cad.onshape.com/documents/430ff184cf3dd9557aaff2be/w/e3658b7152c139971d22c688/e/bd399bf1860732c6c6a2ee45?renderMode=0&uiState=6867fd3ef773466d059edf0c)  
-
-Note that predefined position are available in "named position" tooling, with corresponding servos angles
-
-![Onshape&Named_Pos](/assets/Named_Pos.jpg)  
-
-## Assembly Guide
-
-Assembly guide for the Amazing Hand in combination with standards components in the BOM is here :  
-[=> Assembly Guide](/docs/AmazingHand_Assembly.pdf)  
-![Assembly_example](/assets/Assembly.jpg)  
-
-You will need simple program / script to calibrate each fingers, available here :
-- With Python & Waveshare serial bus driver : [here](https://github.com/pollen-robotics/AmazingHand/tree/main/PythonExample)
-- With Arduino & TTLinker : [here](https://github.com/pollen-robotics/AmazingHand/tree/main/ArduinoExample)
-
-
-Note that this assembly guide is for a standalone Right hand.
-
-If you need to build a standalone Left hand, you can keep the sames IDs for servos location, and select if it's a right or left hand in the software.
-
-BUT, if you need to build both right and left hands to plug them on a robot, you will have to attribute differents IDs for right and left hands. You can't have same ID for different servos on the same serial bus...
-
-## Run basic Demo
-
-Basic Demo which is available with both Python & Arduino.
-
-You will need external power supply to be able to power the 8 actuators inside the hand.
-
-If you don't have one already, simple external power supply could be a DC/DC 220V -> 5V / 2A adapter with jack connector.
-Check on the Bom List :
-[AmazingHand BOM](https://docs.google.com/spreadsheets/d/1QH2ePseqXjAhkWdS9oBYAcHPrxaxkSRCgM_kOK0m52E/edit?gid=1269903342#gid=1269903342) 
-
-- Python script : "AmazingHand_Demo.py" [here](https://github.com/pollen-robotics/AmazingHand/tree/main/ArduinoExample)
-  
-- Arduino program : "AmazingHand_Demo.ino" [here](https://github.com/pollen-robotics/AmazingHand/tree/main/PythonExample)
-
-
-https://github.com/user-attachments/assets/485fc1f4-cc57-4e59-90b5-e84518b9fed0
 
 
 # Python-based Hand Tracking System
@@ -296,6 +227,75 @@ The system can be configured through parameters in the Python script:
 - External 5V power supply for servos
 
 This system provides a simplified alternative to the original Rust/Dora/Mujoco implementation while maintaining the core functionality of real-time hand tracking and robot control.
+
+
+# Build Resources
+## BOM (Bill Of Materials)
+List of all needed components is available here:  
+[AmazingHand BOM](https://docs.google.com/spreadsheets/d/1QH2ePseqXjAhkWdS9oBYAcHPrxaxkSRCgM_kOK0m52E/edit?gid=1269903342#gid=1269903342)  
+![BOM](assets/BOM.jpg)
+
+And remember to add control choice cost (2 options detailed previously)
+
+
+Detailed for custom 3D printed parts are here : 
+[3Dprinted parts](https://docs.google.com/spreadsheets/d/1QH2ePseqXjAhkWdS9oBYAcHPrxaxkSRCgM_kOK0m52E/edit?gid=2050623549#gid=2050623549)
+
+![3Dparts](assets/3Dparts.jpg)
+
+Here is guide to explain how to print all the needed custom parts :
+[=> 3D Printing Guide](/docs/AmazingHand_3DprintingTips.pdf)
+![3DPrint_example](/assets/3DPrint.jpg) 
+
+
+
+## CAD Files and Onshape document
+STL and Steps files can be found [here](https://github.com/pollen-robotics/AmazingHand/tree/main/cad) 
+
+Note that Fingers are the same if you want to build a left hand, but some parts are symetrical. Specific right hand parts are preceded by an "R", and other of the left hand parts by an "L".
+
+![Heart](/assets/Heart.jpg)
+
+Everyone can access the Onshape document too:   
+[Link Onshape](https://cad.onshape.com/documents/430ff184cf3dd9557aaff2be/w/e3658b7152c139971d22c688/e/bd399bf1860732c6c6a2ee45?renderMode=0&uiState=6867fd3ef773466d059edf0c)  
+
+Note that predefined position are available in "named position" tooling, with corresponding servos angles
+
+![Onshape&Named_Pos](/assets/Named_Pos.jpg)  
+
+## Assembly Guide
+
+Assembly guide for the Amazing Hand in combination with standards components in the BOM is here :  
+[=> Assembly Guide](/docs/AmazingHand_Assembly.pdf)  
+![Assembly_example](/assets/Assembly.jpg)  
+
+You will need simple program / script to calibrate each fingers, available here :
+- With Python & Waveshare serial bus driver : [here](https://github.com/pollen-robotics/AmazingHand/tree/main/PythonExample)
+- With Arduino & TTLinker : [here](https://github.com/pollen-robotics/AmazingHand/tree/main/ArduinoExample)
+
+
+Note that this assembly guide is for a standalone Right hand.
+
+If you need to build a standalone Left hand, you can keep the sames IDs for servos location, and select if it's a right or left hand in the software.
+
+BUT, if you need to build both right and left hands to plug them on a robot, you will have to attribute differents IDs for right and left hands. You can't have same ID for different servos on the same serial bus...
+
+## Run basic Demo
+
+Basic Demo which is available with both Python & Arduino.
+
+You will need external power supply to be able to power the 8 actuators inside the hand.
+
+If you don't have one already, simple external power supply could be a DC/DC 220V -> 5V / 2A adapter with jack connector.
+Check on the Bom List :
+[AmazingHand BOM](https://docs.google.com/spreadsheets/d/1QH2ePseqXjAhkWdS9oBYAcHPrxaxkSRCgM_kOK0m52E/edit?gid=1269903342#gid=1269903342) 
+
+- Python script : "AmazingHand_Demo.py" [here](https://github.com/pollen-robotics/AmazingHand/tree/main/ArduinoExample)
+  
+- Arduino program : "AmazingHand_Demo.ino" [here](https://github.com/pollen-robotics/AmazingHand/tree/main/PythonExample)
+
+
+https://github.com/user-attachments/assets/485fc1f4-cc57-4e59-90b5-e84518b9fed0
 
 
 # Disclaimer
