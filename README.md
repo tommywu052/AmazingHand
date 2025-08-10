@@ -57,6 +57,17 @@ Up to you !
     - [CAD Files and Onshape document](#CAD-files-and-onshape-document)
     - [Assembly Guide](#assembly-guide)
     - [Run_basic_Demo](#Run-basic-Demo)
+- [Python-based Hand Tracking System](#python-based-hand-tracking-system)
+    - [Features](#features)
+    - [Files](#files)
+    - [Quick Start](#quick-start)
+    - [Command Line Options](#command-line-options)
+    - [Installation](#installation)
+    - [Simulation Mode](#simulation-mode)
+    - [Testing and Troubleshooting](#testing-and-troubleshooting)
+    - [Control Modes](#control-modes)
+    - [Configuration](#configuration)
+    - [Hardware Requirements](#hardware-requirements)
 - [Disclaimer](#disclaimer)
 - [AmazingHand_tracking Demo](#AmazingHand_tracking_Demo) 
 - [Project Updates & Community](#project-updates--community)
@@ -135,6 +146,156 @@ Check on the Bom List :
 
 
 https://github.com/user-attachments/assets/485fc1f4-cc57-4e59-90b5-e84518b9fed0
+
+
+# Python-based Hand Tracking System
+
+A new Python-based hand tracking system has been developed that provides real-time control of the Amazing Hand using MediaPipe hand tracking and inverse kinematics.
+
+## Features
+
+- **Real-time Hand Tracking**: Uses MediaPipe to detect hand landmarks from video stream
+- **Inverse Kinematics**: Implements curl-based IK for natural finger movement control
+- **Direct Motor Control**: Communicates directly with Feetech SCS0009 servos via serial connection
+- **Natural Movement**: Robot fingers mimic physical hand movements including bending and positioning
+- **Configurable Parameters**: Adjustable sensitivity, movement ranges, and motor positions
+
+## Files
+
+- **`amazing_hand_tracker_simple.py`**: Main Python script for hand tracking and robot control
+- **`scsservo_sdk/`**: Custom SDK for Feetech SCS0009 servo communication
+- **`r_hand.json`**: Robot hand configuration file with motor mappings
+- **`requirement_simple.txt`**: Python dependencies for the tracking system
+
+## Quick Start
+
+1. Install dependencies:
+   ```bash
+   pip install -r requirement_simple.txt
+   ```
+
+2. Connect the Amazing Hand to your computer via USB (COM port on Windows)
+
+3. Run the tracking system:
+   ```bash
+   python amazing_hand_tracker_simple.py --port COM3
+   ```
+
+4. Show your hand to the camera - the robot fingers will follow your movements
+
+## Command Line Options
+
+The script supports various command line arguments for different modes and configurations:
+
+```bash
+# Basic hand tracking with robot control
+python amazing_hand_tracker_simple.py --port COM3
+
+# Simulation mode (no physical robot connection)
+python amazing_hand_tracker_simple.py --simulation
+
+# Test individual motors
+python amazing_hand_tracker_simple.py --test-motors --port COM3
+
+# Enable debug output
+python amazing_hand_tracker_simple.py --port COM3 --debug
+
+# Use advanced IK instead of curl-based IK
+python amazing_hand_tracker_simple.py --port COM3 --advanced-ik
+
+# Specify different COM port
+python amazing_hand_tracker_simple.py --port COM4
+
+# Help and available options
+python amazing_hand_tracker_simple.py --help
+```
+
+## Installation
+
+### Prerequisites
+- Python 3.7 or higher
+- Webcam for hand tracking
+- USB-to-Serial converter (for physical robot connection)
+
+### Dependencies Installation
+
+Install all required packages:
+```bash
+pip install -r requirement_simple.txt
+```
+
+Or install manually:
+```bash
+pip install opencv-python
+pip install mediapipe
+pip install numpy
+pip install pyserial
+```
+
+### Hardware Setup
+1. Connect the Amazing Hand to your computer via USB
+2. Ensure external 5V power supply is connected to the servos
+3. Note the COM port (e.g., COM3 on Windows, /dev/ttyUSB0 on Linux)
+
+## Simulation Mode
+
+For testing without physical hardware, use simulation mode:
+```bash
+python amazing_hand_tracker_simple.py --simulation
+```
+
+In simulation mode:
+- MediaPipe hand tracking works normally
+- Motor commands are simulated (no physical movement)
+- Useful for testing hand detection and IK calculations
+- No COM port connection required
+
+## Testing and Troubleshooting
+
+### Test Motor Connections
+```bash
+python amazing_hand_tracker_simple.py --test-motors --port COM3
+```
+
+This will:
+- Test communication with each servo
+- Move each finger through its range of motion
+- Verify motor IDs and connections
+- Display servo feedback and status
+
+### Debug Mode
+```bash
+python amazing_hand_tracker_simple.py --port COM3 --debug
+```
+
+Enables:
+- Detailed console output
+- Motor position logging
+- IK calculation details
+- MediaPipe landmark coordinates
+
+## Control Modes
+
+- **Curl-based IK**: Maps finger curl (bending) to servo positions for natural movement
+- **Advanced IK**: Alternative inverse kinematics approach (experimental)
+- **Test Mode**: Test individual motors and verify connections
+
+## Configuration
+
+The system can be configured through parameters in the Python script:
+- `CURL_GAIN_PER`: Sensitivity of finger bending
+- `OPEN_POS_PER`/`CLOSE_POS_PER`: Position limits for each finger
+- `CENTER_OFFSET`: Compensation for finger alignment
+- `MOVEMENT_SMOOTHING`: Smoothing factor for movement response
+
+## Hardware Requirements
+
+- Amazing Hand with Feetech SCS0009 servos
+- USB-to-Serial converter (or direct USB connection)
+- Webcam for hand tracking
+- External 5V power supply for servos
+
+This system provides a simplified alternative to the original Rust/Dora/Mujoco implementation while maintaining the core functionality of real-time hand tracking and robot control.
 
 
 # Disclaimer

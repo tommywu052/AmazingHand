@@ -1,0 +1,81 @@
+{
+  "fingers": [
+    {
+      "name": "finger1",
+      "motor1": {
+        "id": 1,
+        "offset": 0.12217304763960307,
+        "invert": false,
+        "model": "SCS0009"
+      },
+      "motor2": {
+        "id": 2,
+        "offset": 0.08726646259971647,
+        "invert": false,
+        "model": "SCS0009"
+      }
+    },
+    {
+      "name": "finger2",
+      "motor1": {
+        "id": 3,
+        "offset": 0.0,
+        "invert": false,
+        "model": "SCS0009"
+      },
+      "motor2": {
+        "id": 4,
+        "offset": 0.12217304763960307,
+        "invert": false,
+        "model": "SCS0009"
+      }
+    },
+    {
+      "name": "finger3",
+      "motor1": {
+        "id": 5,
+        "offset": 0.08726646259971647,
+        "invert": false,
+        "model": "SCS0009"
+      },
+      "motor2": {
+        "id": 6,
+        "offset": 0.12217304763960307,
+        "invert": false,
+        "model": "SCS0009"
+      }
+    },
+    {
+      "name": "finger4",
+      "motor1": {
+        "id": 7,
+        "offset": 0.0,
+        "invert": false,
+        "model": "SCS0009"
+      },
+      "motor2": {
+        "id": 8,
+        "offset": 0.12217304763960307,
+        "invert": false,
+        "model": "SCS0009"
+      }
+    }
+  ],
+  "hand_side": "right",
+  "serial_settings": {
+    "baudrate": 1000000,
+    "timeout": 0.1
+  },
+  "tracking_settings": {
+    "fps": 30,
+    "detection_confidence": 0.5,
+    "tracking_confidence": 0.5
+  },
+  "ik_settings": {
+    "position_cost": 1.0,
+    "orientation_cost": 0.0,
+    "posture_cost": 1e-2,
+    "equality_cost": 1000.0,
+    "solver": "quadprog"
+  }
+}
