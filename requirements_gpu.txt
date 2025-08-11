@@ -1,0 +1,30 @@
+# GPU-accelerated dependencies for Amazing Hand tracking system
+# Enhanced performance with NVIDIA CUDA support
+# 
+# NOTE: Python 3.12 on Windows has limited CUDA package support
+# For full GPU acceleration, consider using Python 3.11
+
+# Core dependencies (same as CPU version)
+numpy>=1.21.0
+pyserial>=3.5
+
+# MediaPipe (CPU version - GPU acceleration limited on Python 3.12 Windows)
+mediapipe>=0.10.0
+
+# OpenCV (CPU version - CUDA packages not available for Python 3.12 Windows)
+opencv-contrib-python>=4.8.0
+
+# PyTorch with CUDA support (this works on Python 3.12)
+# Note: Install from https://pytorch.org/ for your CUDA version
+# Example: pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu121
+
+# Alternative GPU acceleration packages (if available for Python 3.12)
+# These may not be available yet for Python 3.12 on Windows
+
+# For Python 3.11 users (full GPU acceleration):
+# opencv-contrib-python-cuda>=4.8.0
+# mediapipe-gpu>=0.10.0
+
+# Note: Install CUDA Toolkit and compatible drivers for your GPU
+# Windows: Visual Studio Build Tools required for building from source
+# Linux: GCC compiler required
